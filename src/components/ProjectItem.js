@@ -1,12 +1,12 @@
 import React from "react";
 
-function ProjectItem({ name, about, technologies }) {
+function ProjectItem({ projects }) {
   return (
     <div className="project-item">
-      <h3>{name}</h3>
-      <p>{about}</p>
+      <h3>{projects.name}</h3>
+      <p>{projects.about}</p>
       <div className="technologies">
-        {/* render a <span> for each technology in the technologies array */}
+        <span>{projects.technologies}</span>
       </div>
     </div>
   );
